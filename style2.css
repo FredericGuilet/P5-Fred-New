@@ -33,4 +33,16 @@ p {
 {
   max-width: 1300px;
 
+
+}
+
+.col{
+  display: flex;
+  align-items: center;
+
+}
+
+.ImagesNounours img{
+  width:200px;
+  height:200px;
 }
