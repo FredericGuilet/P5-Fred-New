@@ -1,6 +1,6 @@
-const { readlink } = require("fs");
+// const { readlink } = require("fs");
 
-var element = document.getElementById("5be9c8541c9d440000665243");
+// var element = document.getElementById("5be9c8541c9d440000665243");
 
 // Partie lien entre le front et le BackEnd
 
@@ -23,7 +23,8 @@ var element = document.getElementById("5be9c8541c9d440000665243");
 // Et régler en BootStrap pour un bel affichage en responsive avec md sd etc ....
 
 // Tout cela c'est pour la partie index
-fetch("http://localhost:3000/api/teddies/")
+
+fetch("http://localhost:3000/api/teddies/id")
 // const myAnchor = document.getElementById('5be9c8541c9d440000665243');
 .then(function(id) {
     if (id.ok) {
