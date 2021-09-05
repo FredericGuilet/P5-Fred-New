@@ -92,13 +92,25 @@
             <section>
                 <h2>
                     ICI LA SECTION 1
-                    <div class="ImagesNounours">
-                        <!-- <img src="BackEnd/images/teddy_1.jpg" alt="Nounours1" /> -->
-                        <div id="5be9c8541c9d440000665243">
-                            <p id="5be9c8541c9d440000665243">My content</p>
-
-                        </div>
-                    </div>
+                    <div class="row d-flex justify-content-center flex-wrap" id="produits">
+                        <template id="templateArticle">
+                           <div class="col-12 col-lg-4 mx-lg-6 mt-lg-5 mt-3">
+                              <div class="card mb-4 mb-lg-0 border-primary shadow-lg rounded">
+                                 <article class="card-body">
+                                    <img id="blog__image" src="" class="img-fluid rounded mx-auto d-block" alt="table"/>
+                                    <h2 class="h4 mt-3" id="blog__title"></h2>
+                                    <div class="d-flex justify-content-between">
+                                       <p class="h5" id="blog__price"></p>
+                                       <div class="d-flex justify-content-start">
+                                          <a href="" class="btn btn-wood stretched-link" id="blog__lien">Voir le détail du produit</a>
+                                       </div>
+                                    </div>
+                                 </article>
+                              </div>
+                           </div>
+                        </template>
+                     </div>   
+                 
                 </h2>
 
             </section>
@@ -162,7 +174,7 @@
 
             <link rel="nounours" href="BackEnd/teddies.json">
             <link rel="stylesheet" href="BackEnd/teddies.json">
-            <script src="jscriptFred.js">
+            <script src="jscriptFredMeubles.js">
             </script>
 
 

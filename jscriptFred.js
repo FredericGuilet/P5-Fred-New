@@ -23,8 +23,19 @@ var element = document.getElementById("5be9c8541c9d440000665243");
 // Et régler en BootStrap pour un bel affichage en responsive avec md sd etc ....
 
 // Tout cela c'est pour la partie index
-
-
+fetch("http://localhost:3000/api/teddies/")
+// const myAnchor = document.getElementById('5be9c8541c9d440000665243');
+.then(function(id) {
+    if (id.ok) {
+      return res.json();
+    }
+  })
+  .then(function(value) {
+    console.log(value);
+  })
+  .catch(function(err) {
+    // Une erreur est survenue
+  });
 
 
 // Partie image du produit
@@ -42,6 +53,7 @@ var element = document.getElementById("5be9c8541c9d440000665243");
 
 // Récupérer les différents produits cochés avec éventuellement leur couleur et surtout la quantité
 // Mettre en place un mini formulaire de confirmation avec coordonnées
+// Et faire une metode Post
 
 
 
