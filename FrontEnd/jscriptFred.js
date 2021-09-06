@@ -24,19 +24,45 @@
 
 // Tout cela c'est pour la partie index
 
-fetch("http://localhost:3000/api/teddies/id")
-// const myAnchor = document.getElementById('5be9c8541c9d440000665243');
-.then(function(id) {
-    if (id.ok) {
-      return res.json();
-    }
-  })
-  .then(function(value) {
-    console.log(value);
-  })
-  .catch(function(err) {
-    // Une erreur est survenue
+
+fetch('http://localhost:3000/api/teddies')
+  .then(response => response.json())
+  .then(data => {
+
+    console.log(data);
+
+    // let monArray = [‘a’, ’b’, ’c’];
+    console.log(data[1]); // donnera la srtrucyre dy nounours car c’est le premier élément du tableau
+
+    console.log(data[1].name); //( deuxieme nouounous ddans les tablo)
+
+    // document.getElementById("content").textContent = data[1].name; methode marianick
+
+    document.getElementById("content").innerHTML = "<H1>" + data[1].name + "</H1>"; // methode aurelien
+    let titre = document.createElement("H2");
+    titre.setAttribute("class", "nomours") // ca c'est pour le décorer en css
+    titre.textContent = data[1].name; 
+    document.getElementById("content").appendChild(titre);
+
+// objectif parcourir le tableau des nounounous et l'afficher 
+
   });
+
+
+// fetch("http://localhost:3000/api/teddies")
+// // const myAnchor = document.getElementById('5be9c8541c9d440000665243');
+
+// .then(function(id) {
+//     if (id.ok) {
+//       return res.json();
+//     }
+//   })
+//   .then(function(value) {
+//     console.log(value);
+//   })
+//   .catch(function(err) {
+//     // Une erreur est survenue
+//   });
 
 
 // Partie image du produit
