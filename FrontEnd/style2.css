@@ -47,6 +47,8 @@ p {
 
 .nomours{
   color: red;
+  border-style: solid;
+  box-shadow: 5px;
 }
 
 H2 {
