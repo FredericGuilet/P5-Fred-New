@@ -27,23 +27,28 @@
 
 fetch('http://localhost:3000/api/teddies')
   .then(response => response.json())
-  .then(data =>
-     {
-
-    console.log(data);
-
+  .then(data => {
+    // console.log(data);
     // let monArray = [‘a’, ’b’, ’c’];
-    console.log(data[1]); // donnera la srtrucyre dy nounours car c’est le premier élément du tableau
+    // console.log(data[1]); // donnera la srtrucyre dy nounours car c’est le premier élément du tableau
 
-    console.log(data[1].name); //( deuxieme nouounous ddans les tablo)
+    // console.log(data[1].name); //( deuxieme nouounous ddans les tablo)
+    // document.getElementById("blog__image").src = teddies.imageUrl
+    // document.getElementById("content").textContent = data[0].name;  
+    // document.getElementById("content").imageUrl = data[0].imageUrl;  
+    // document.getElementById("img").textContent = data[1].imageUrl;
+    //methode marianick
 
-    document.getElementById("content").textContent = data[1].name; //methode marianick
-
-    document.getElementById("content").innerHTML = "<H1>" + data[1].name + "</H1>"; // methode aurelien
+    // document.getElementById("content").innerHTML = "<H1>" + data[1].name + "</H1>"; // methode aurelien
     let titre = document.createElement("H2")
+    let titre2 = document.createElement("H2")
     titre.setAttribute("class", "nomours"); // ca c'est pour le décorer en css
+    titre2.setAttribute("class", "nomours"); // ca c'est pour le décorer en css
     titre.textContent = data[1].name;
+    titre2.textContent = data[1].imageUrl;
     document.getElementById("content").appendChild(titre);
+    document.getElementById("content").appendChild(titre2);
+    // document.getElementById("content").appendChild(titre)
 
     // objectif parcourir le tableau des nounounous et l'afficher 
 
