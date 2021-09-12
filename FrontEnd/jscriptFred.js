@@ -33,17 +33,27 @@ fetch('http://localhost:3000/api/teddies')
 
     let titre = document.createElement("H2")
     let titre2 = document.createElement("img")
+    let titre3 = document.createElement("H2")
+    let titre4 = document.createElement("img")
 
     // Pour le décorer en css
     titre.setAttribute("class", "nounours"); 
     titre2.setAttribute("class", "nounours");
+    titre3.setAttribute("class", "nounours");
+    titre4.setAttribute("class", "nounours");
 
     titre.textContent = data[0].name;
+    titre2.textContent = data[0].name;
+    titre3.textContent = data[1].name;
+    titre4.textContent = data[1].name;
+
     titre2.setAttribute("src", data[0].imageUrl );
+    titre4.setAttribute("src", data[1].imageUrl );
 
     document.getElementById("content").appendChild(titre);
     document.getElementById("content").appendChild(titre2);
-
+    document.getElementById("content").appendChild(titre3);
+    document.getElementById("content").appendChild(titre4);
   })
 
 
