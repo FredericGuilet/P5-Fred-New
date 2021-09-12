@@ -33,25 +33,18 @@ fetch('http://localhost:3000/api/teddies')
 
     let titre = document.createElement("H2")
     let titre2 = document.createElement("img")
-
-    var x = titre2
-  
-  
+    let imageDuTitre2 = titre2
 
     titre.setAttribute("class", "nounours"); // ca c'est pour le décorer en css
     titre2.setAttribute("class", "nounours"); // ca c'est pour le décorer en css
-    x.setAttribute("class", "nounours"); // ca c'est pour le décorer en css
+    imageDuTitre2.setAttribute("class", "nounours"); // ca c'est pour le décorer en css
 
     titre.textContent = data[1].name;
     titre2.textContent = data[1].imageUrl;
-    x.setAttribute("src", "titre2");
+    imageDuTitre2.setAttribute("src", "titre2");
 
-    // document.getElementById('content').innerHTML = '<img width="100" height="100" src=titre2.textContent>'
-
-
-    // document.getElementById("content").appendChild('<img width="100" height="100" src=titre2.textContent>');
     document.getElementById("content").appendChild(titre);
-    document.getElementById("content").appendChild(x);
+    document.getElementById("content").appendChild(imageDuTitre2);
 
   })
 

@@ -40,15 +40,23 @@ p {
 
 }
 
-.x img {
+.imageDuTitre2 img {
   width: 200px;
   height: 200px;
 }
 
 .nounours{
+  display: flex;
+  flex-direction: column;
   color: #935df0;
-  border-style: solid;
-  box-shadow: 5px;
+  /* border-style: solid; */
+  /* box-shadow: 5px; */
+  width: 200px;
+  height: 200px;
+align-items: center;
+justify-content: center;
+
+
 }
 
 H2 {
