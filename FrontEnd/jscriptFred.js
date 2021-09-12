@@ -33,16 +33,29 @@ fetch('http://localhost:3000/api/teddies')
 
     let nomDuNounours = document.createElement("H2")
     let imageDuNounours = document.createElement("img")
+    let prixDuNounours = document.createElement("H3")
+    let couleurDuNounours = document.createElement("H4")
+    let descriptionDuNounours = document.createElement("p")
+  
 
     // Pour le décorer en css
     nomDuNounours.setAttribute("class", "nounours");
-    imageDuNounours.setAttribute("class", "nounours");
+    imageDuNounours.setAttribute("class", "imageDuNounours");
+    prixDuNounours.setAttribute("class", "nounours");
+    couleurDuNounours.setAttribute("class", "nounours");
+    descriptionDuNounours.setAttribute("class", "descriptionDuNounours");
 
     nomDuNounours.textContent = data[0].name;
     imageDuNounours.setAttribute("src", data[0].imageUrl);
+    prixDuNounours.textContent = data[0].price;
+    couleurDuNounours.textContent = data[0].colors;
+    descriptionDuNounours.textContent = data[0].description;
 
     document.getElementById("content").appendChild(nomDuNounours);
     document.getElementById("content").appendChild(imageDuNounours);
+    document.getElementById("content").appendChild(prixDuNounours ," €");
+    document.getElementById("content").appendChild(couleurDuNounours ," €");
+    document.getElementById("content").appendChild(descriptionDuNounours) ;
 
   })
 

@@ -40,12 +40,9 @@ p {
   /* flex-direction: row; */
 }
 
- img {
-  width: 200px;
-  height: 200px;
-}
 
-.nounours{
+
+.nounours {
   /* display: inline-flex; */
   /* justify-content: space-between; */
   /* display: flex;
@@ -55,23 +52,32 @@ p {
   /* box-shadow: 5px; */
   /* width: 200px; */
   /* height: 200px; */
-/* align-items: center; */
-justify-content: center;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+.imageDuNounours {
+  height: 200px;
+  border: 5px solid;
+  border-color: gold;
+}
+
+.descriptionDuNounours{
+  color: black;
 }
 
 
 .EspaceDesNounous {
 
-display: inline-flex;
-justify-content: space-between;
-flex-direction: row;
-width: 100%;
-flex-wrap:wrap;
+
+
+  width: 500px;
+
 
 }
 
 H2 {
-  color : green;
+  color: green;
 
 
 }
