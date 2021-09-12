@@ -46,8 +46,8 @@ p {
 }
 
 .nounours{
-  display: inline-flex;
-  justify-content: space-between;
+  /* display: inline-flex; */
+  /* justify-content: space-between; */
   /* display: flex;
   flex-direction: column; */
   color: #935df0;
@@ -62,8 +62,8 @@ justify-content: center;
 
 .EspaceDesNounous {
 
-  display: inline-flex;
-  justify-content: space-between;
+display: inline-flex;
+justify-content: space-between;
 flex-direction: row;
 width: 100%;
 flex-wrap:wrap;
