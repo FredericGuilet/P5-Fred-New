@@ -26,59 +26,35 @@
 
 
 fetch('http://localhost:3000/api/teddies')
+
   .then(response => response.json())
+
   .then(data => {
-    // console.log(data);
-    // let monArray = [‘a’, ’b’, ’c’];
-    // console.log(data[1]); // donnera la srtrucyre dy nounours car c’est le premier élément du tableau
 
-    // console.log(data[1].name); //( deuxieme nouounous ddans les tablo)
-    // document.getElementById("blog__image").src = teddies.imageUrl
-    // document.getElementById("content").textContent = data[0].name;  
-    // document.getElementById("content").imageUrl = data[0].imageUrl;  
-    // document.getElementById("img").textContent = data[1].imageUrl;
-    //methode marianick
-
-    // document.getElementById("content").innerHTML = "<H1>" + data[1].name + "</H1>"; // methode aurelien
-   
     let titre = document.createElement("H2")
-    let titre2 = document.createElement("H2")
-    
-    titre.setAttribute("class", "nomours"); // ca c'est pour le décorer en css
-    titre2.setAttribute("class", "nomours"); // ca c'est pour le décorer en css
-    
+    let titre2 = document.createElement("img")
+
+    var x = titre2
+  
+  
+
+    titre.setAttribute("class", "nounours"); // ca c'est pour le décorer en css
+    titre2.setAttribute("class", "nounours"); // ca c'est pour le décorer en css
+    x.setAttribute("class", "nounours"); // ca c'est pour le décorer en css
+
     titre.textContent = data[1].name;
     titre2.textContent = data[1].imageUrl;
-    // img.src = "titre2.textContent = data[1].imageUrl";
-    
+    x.setAttribute("src", "titre2");
+
+    // document.getElementById('content').innerHTML = '<img width="100" height="100" src=titre2.textContent>'
 
 
+    // document.getElementById("content").appendChild('<img width="100" height="100" src=titre2.textContent>');
     document.getElementById("content").appendChild(titre);
-    document.getElementById("content").appendChild(titre2);
+    document.getElementById("content").appendChild(x);
 
+  })
 
-
-    // document.getElementById("content").appendChild(titre)
-
-    // objectif parcourir le tableau des nounounous et l'afficher 
-
-  });
-
-
-// fetch("http://localhost:3000/api/teddies")
-// // const myAnchor = document.getElementById('5be9c8541c9d440000665243');
-
-// .then(function(id) {
-//     if (id.ok) {
-//       return res.json();
-//     }
-//   })
-//   .then(function(value) {
-//     console.log(value);
-//   })
-//   .catch(function(err) {
-//     // Une erreur est survenue
-//   });
 
 
 // Partie image du produit
@@ -90,14 +66,11 @@ fetch('http://localhost:3000/api/teddies')
 
 
 
-
-
 // Partie Panier de commande
 
 // Récupérer les différents produits cochés avec éventuellement leur couleur et surtout la quantité
 // Mettre en place un mini formulaire de confirmation avec coordonnées
 // Et faire une metode Post
-
 
 
 // Partie Confirmation
