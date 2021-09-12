@@ -32,8 +32,12 @@ fetch('http://localhost:3000/api/teddies')
   .then(data => {
 
     for (let i = 0; i <data.length; i++) {
-     
-   
+
+
+// test pour créer un oject qui regroupe tous les éléments d'un nounours 
+    let objetNounours = document.createElement("class", "objetNounours");
+    objetNounours.setAttribute("class", "objetNounours");
+
 
     let nomDuNounours = document.createElement("H2")
     let imageDuNounours = document.createElement("img")
@@ -58,8 +62,9 @@ fetch('http://localhost:3000/api/teddies')
     document.getElementById("content").appendChild(nomDuNounours);
     document.getElementById("content").appendChild(imageDuNounours);
     document.getElementById("content").appendChild(prixDuNounours ," €");
-    document.getElementById("content").appendChild(couleurDuNounours ," €");
+    document.getElementById("content").appendChild(couleurDuNounours);
     document.getElementById("content").appendChild(descriptionDuNounours) ;
+
   }
   })
 
