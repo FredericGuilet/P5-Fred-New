@@ -37,10 +37,9 @@ fetch('http://localhost:3000/api/teddies')
     // Pour le décorer en css
     titre.setAttribute("class", "nounours"); 
     titre2.setAttribute("class", "nounours");
-    
-    titre.textContent = data[1].name;
-    titre2.textContent = data[1].imageUrl;
-    titre2.setAttribute("src", "titre2");
+
+    titre.textContent = data[0].name;
+    titre2.setAttribute("src", data[0].imageUrl );
 
     document.getElementById("content").appendChild(titre);
     document.getElementById("content").appendChild(titre2);
