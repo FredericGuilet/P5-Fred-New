@@ -31,6 +31,10 @@ fetch('http://localhost:3000/api/teddies')
 
   .then(data => {
 
+    for (let i = 0; i <data.length; i++) {
+     
+   
+
     let nomDuNounours = document.createElement("H2")
     let imageDuNounours = document.createElement("img")
     let prixDuNounours = document.createElement("H3")
@@ -45,18 +49,18 @@ fetch('http://localhost:3000/api/teddies')
     couleurDuNounours.setAttribute("class", "nounours");
     descriptionDuNounours.setAttribute("class", "descriptionDuNounours");
 
-    nomDuNounours.textContent = data[0].name;
-    imageDuNounours.setAttribute("src", data[0].imageUrl);
-    prixDuNounours.textContent = data[0].price;
-    couleurDuNounours.textContent = data[0].colors;
-    descriptionDuNounours.textContent = data[0].description;
+    nomDuNounours.textContent = data[i].name;
+    imageDuNounours.setAttribute("src", data[i].imageUrl);
+    prixDuNounours.textContent = data[i].price;
+    couleurDuNounours.textContent = data[i].colors;
+    descriptionDuNounours.textContent = data[i].description;
 
     document.getElementById("content").appendChild(nomDuNounours);
     document.getElementById("content").appendChild(imageDuNounours);
     document.getElementById("content").appendChild(prixDuNounours ," €");
     document.getElementById("content").appendChild(couleurDuNounours ," €");
     document.getElementById("content").appendChild(descriptionDuNounours) ;
-
+  }
   })
 
 
