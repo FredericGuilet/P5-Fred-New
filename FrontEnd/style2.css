@@ -40,7 +40,7 @@ p {
 
 }
 
-.imageDuTitre2 img {
+.nounours img {
   width: 200px;
   height: 200px;
 }
@@ -51,9 +51,9 @@ p {
   color: #935df0;
   /* border-style: solid; */
   /* box-shadow: 5px; */
-  width: 200px;
+  /* width: 200px; */
   height: 200px;
-align-items: center;
+/* align-items: center; */
 justify-content: center;
 
 

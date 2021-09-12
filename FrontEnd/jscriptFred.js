@@ -41,7 +41,7 @@ fetch('http://localhost:3000/api/teddies')
 
     titre.textContent = data[1].name;
     titre2.textContent = data[1].imageUrl;
-    imageDuTitre2.setAttribute("src", "titre2");
+    imageDuTitre2.setAttribute("src", "titre2.textContent");
 
     document.getElementById("content").appendChild(titre);
     document.getElementById("content").appendChild(imageDuTitre2);
