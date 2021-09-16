@@ -11,7 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <!-- <link rel="shortcut icon" type="image/png" href="favicon.jpg"> -->
 
-    <link rel="apple-touch-icon" sizes="57x57" href="Favicon/apple-icon-57x57.png">
+    <!-- <link rel="apple-touch-icon" sizes="57x57" href="Favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="Favicon/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="Favicon/apple-icon-72x72.png">
     <link rel="apple-touch-icon" sizes="76x76" href="Favicon/apple-icon-76x76.png">
@@ -26,7 +26,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="Favicon/favicon-16x16.png">
     <link rel="manifest" href="Favicon/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="Favicon/ms-icon-144x144.png">
+    <meta name="msapplication-TileImage" content="Favicon/ms-icon-144x144.png"> -->
     <meta name="theme-color" content="#ffffff">
 
 
@@ -60,8 +60,9 @@
         <!-- Background image -->
         <!-- J'ai bien galéré mais j'ai compris c'est le principal  -->
 
-        <div class="bg-image" style="background-image: url('imagesFred/page_gradient.png');
-        height: 100vh; background-color: #f3e9f1; background-repeat: no-repeat;">
+        <div class="bg-image" style="background-image: url('page_gradient.png');
+        
+        background-color: #f3e9f1; background-repeat:repeat;">
 
             <header>
                 <div class="row">
@@ -83,46 +84,12 @@
                 </div>
             </header>
 
-            <section>
-                <h1>
-                    DESCRIPTION DU SITE
-                </h1>
-            </section>
-
-            <section>
-                <h2>
-                    ICI LA SECTION 1
-                    <div class="row d-flex justify-content-center flex-wrap" id="produits">
-                        <template id="templateArticle">
-                           <div class="col-12 col-lg-4 mx-lg-6 mt-lg-5 mt-3">
-                              <div class="card mb-4 mb-lg-0 border-primary shadow-lg rounded">
-                                 <article class="card-body">
-                                    <img id="blog__image" src="" class="img-fluid rounded mx-auto d-block" alt="table"/>
-                                    <h2 class="h4 mt-3" id="blog__title"></h2>
-                                    <div class="d-flex justify-content-between">
-                                       <p class="h5" id="blog__price"></p>
-                                       <div class="d-flex justify-content-start">
-                                          <a href="" class="btn btn-wood stretched-link" id="blog__lien">Voir le détail du produit</a>
-                                       </div>
-                                    </div>
-                                 </article>
-                              </div>
-                           </div>
-                        </template>
-                     </div>   
-                 
-                </h2>
-
-            </section>
-
-            <section>
-                <h2>
-                    ICI LA SECTION 2
-                    <div class="ImagesNounours">
-                        <!-- <img src="BackEnd/images/teddy_2.jpg" alt="Nounours2" /> -->
+            <div class="col-6">
+                <div class="EspaceDesNounous">
+                    <div id="content">
                     </div>
-                    <h2>
-            </section>
+                </div>
+            </div>
 
 
             <footer>
@@ -172,10 +139,8 @@
                 crossorigin="anonymous">
             </script>
 
-            <link rel="nounours" href="BackEnd/teddies.json">
-            <link rel="stylesheet" href="BackEnd/teddies.json">
-            <script src="jscriptFredMeubles.js">
-            </script>
+            <!-- <link rel="nounours" href="BackEnd/teddies.json"> -->
+            <script src="main.js"></script>
 
 
             <!-- jQuery first, then Popper.js, then Bootstrap JS -->
