@@ -2,6 +2,7 @@
 
 body {
   margin: 0;
+  background-color: #f3e9f1; 
 }
 
 .logo {
@@ -40,6 +41,21 @@ p {
   /* flex-direction: row; */
 }
 
+.fa, .fas {
+  font-weight: 900;
+  font-size: 36px;
+  color:  #935df0;
+}
+
+a {
+  font-size: 18px;
+  color:  #935df0;
+}
+
+.EspaceDesNounous{
+  margin-top :100px;
+  margin-bottom: 100px;
+}
 
 .carteNounours {
   display: inline-flex;
