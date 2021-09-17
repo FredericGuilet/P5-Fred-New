@@ -1,7 +1,10 @@
+//appel de l'API
 fetch('http://localhost:3000/api/teddies')
 
+//utilisation de then pour récupérer une promesse qui va nous donner une réponse 
   .then(response => response.json())
-
+  
+//type de format réponse en json
   .then(data => {
 
     for (let i = 0; i < data.length; i++) {
@@ -30,6 +33,7 @@ let carteNounours = document.createElement("div");
       // couleurDuNounours.setAttribute("class", "nounours");
       // descriptionDuNounours.setAttribute("class", "descriptionDuNounours");
       urlDuNounours.setAttribute("class", "nounours");
+      carteNounours.setAttribute("class", "carteNounours");
 
       // on les cherches
       nomDuNounours.textContent = data[i].name;
@@ -38,8 +42,9 @@ let carteNounours = document.createElement("div");
 
       // la on met le href correspondant
       urlDuNounours.setAttribute("href", "produits.html?id="+ data[i]._id);
-      
-      urlDuNounours.textContent = "voir le nounours";
+
+      // la c'est le texte correspondant a l'url
+      urlDuNounours.textContent = "Voir ce nounours";
       prixDuNounours.textContent = prixDuNounours.textContent / 100 +" €";
       // couleurDuNounours.textContent = data[i].colors;
       // descriptionDuNounours.textContent = data[i].description;
