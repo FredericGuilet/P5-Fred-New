@@ -50,8 +50,8 @@ let carteNounours = document.createElement("div");
       // descriptionDuNounours.textContent = data[i].description;
 
       // on les affiches
-      carteNounours.appendChild(nomDuNounours);
       carteNounours.appendChild(imageDuNounours);
+      carteNounours.appendChild(nomDuNounours);
       carteNounours.appendChild(prixDuNounours,);
       carteNounours.appendChild(urlDuNounours);
 

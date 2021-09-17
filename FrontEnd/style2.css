@@ -28,11 +28,11 @@ p {
   text-align: center;
 }
 
-.row {
+/* .row {
   max-width: 1300px;
 
 
-}
+} */
 
 .col {
   display: flex;
@@ -40,53 +40,42 @@ p {
   /* flex-direction: row; */
 }
 
-.EspaceDesNounous
-{
-  display: flex;
-  justify-content:space-between;
-  flex-direction: row; 
-  color: #935df0;
-  border-style: solid;
-  box-shadow: 5px;
-  width: 80%;
-  height: 80%;
-  align-items: center;
-  justify-content: center;
-}
-
 
 .carteNounours {
   display: inline-flex;
   justify-content: space-between;
-  display: flex;
-  flex-direction: column; 
-  color:red;
-  border-style: solid;
-  box-shadow: 5px;
-  width: 200px;
-  height: 200px;
+  flex-direction: column;
+  color: black;
+  background-color: #f3e9f1;
+ box-shadow: 0px 0px 20px 0px #935df0;
+  width: 250px;
+  height: 340px;
+  /* padding: 20px; */
+  margin: 20px;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
+  border-radius:  10px 10px 10px 10px ;
 }
-
+ 
 .imageDuNounours {
-  height: 200px;
-  border: 5px solid;
-  border-color: gold;
+  height: 160px;
+  width:250px;
+  /* object-fit: cover; */
+  /* border: 1px solid; */
+  /* border-color: gold; */
+  border-radius: 5px 5px 0 0 ;
+
 }
 
-.descriptionDuNounours{
+.descriptionDuNounours {
   color: black;
 }
 
-.objetNounours{
+.objetNounours {
   height: 300px;
 }
 
-/* .EspaceDesNounous {
- width: 500px;
-} */
-
 H2 {
-  color: green;
+  color: #935df0;
+  font-size: 1.6em
 }
