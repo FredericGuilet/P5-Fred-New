@@ -10,13 +10,18 @@ fetch('http://localhost:3000/api/teddies')
       // ca je sais pas faire faut que je demande a Mariannick
       // Ensuite le mettre avec bootstrap mais je vais encore me faire engueler
 
+
+let carteNounours = document.createElement("div");
+
       // on crée nos variables
       let nomDuNounours = document.createElement("H2");
       let imageDuNounours = document.createElement("img");
       let prixDuNounours = document.createElement("H3");
       // let couleurDuNounours = document.createElement("H4")
       // let descriptionDuNounours = document.createElement("p")
-      let urlDuNounours = document.createElement("url");
+
+      // parce que c'est un lien
+      let urlDuNounours = document.createElement("a");
 
       // Pour le décorer en css
       nomDuNounours.setAttribute("class", "nounours");
@@ -30,17 +35,22 @@ fetch('http://localhost:3000/api/teddies')
       nomDuNounours.textContent = data[i].name;
       imageDuNounours.setAttribute("src", data[i].imageUrl);
       prixDuNounours.textContent = data[i].price;
-      urlDuNounours.textContent = data[i]._id;
+
+      // la on met le href correspondant
+      urlDuNounours.setAttribute("href", "produits.html?id="+ data[i]._id);
+      
+      urlDuNounours.textContent = "voir le nounours";
       prixDuNounours.textContent = prixDuNounours.textContent / 100 +" €";
       // couleurDuNounours.textContent = data[i].colors;
       // descriptionDuNounours.textContent = data[i].description;
 
       // on les affiches
-      document.getElementById("content").appendChild(nomDuNounours);
-      document.getElementById("content").appendChild(imageDuNounours);
-      document.getElementById("content").appendChild(prixDuNounours,);
-      document.getElementById("content").appendChild(urlDuNounours);
+      carteNounours.appendChild(nomDuNounours);
+      carteNounours.appendChild(imageDuNounours);
+      carteNounours.appendChild(prixDuNounours,);
+      carteNounours.appendChild(urlDuNounours);
 
+      document.getElementById("content").appendChild(carteNounours);
       
       // Quatre jours que je tourne en rond j'attends le mentorat avec Mariannick
       // let params = (new URL(document.location)).searchParams;
@@ -53,11 +63,9 @@ fetch('http://localhost:3000/api/teddies')
       // const urlSearchParams = produits.html.searchParams;
       // let params = (new URL(URL.urlSearchParams)).searchParams;
       // let name = params.get('_id');
-      onclick="location.href='produits.html'._id;"
+      // onclick="location.href='produits.html'._id;"
 
     }
   })
 
-  // onclick open.urlDuNounours;
-  // <a href="produit.html?id=${teddies._id}" id="lien" class="lien"><img alt="image" id="image" src="" url(${teddies.imageUrl}></a>
-// document.location.href="produits.html"; 
+  
