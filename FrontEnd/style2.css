@@ -2,7 +2,13 @@
 
 body {
   margin: 0;
-  background-color: #f3e9f1; 
+  background-color: #f3e9f1;
+}
+
+.colonne-centree
+{
+float: none;
+margin: 0 auto;
 }
 
 .logo {
@@ -35,25 +41,26 @@ p {
 
 } */
 
-.col {
+.colmenu {
   display: flex;
   align-items: center;
   /* flex-direction: row; */
 }
 
-.fa, .fas {
+.fa,
+.fas {
   font-weight: 900;
   font-size: 36px;
-  color:  #935df0;
+  color: #935df0;
 }
 
 a {
   font-size: 18px;
-  color:  #935df0;
+  color: #935df0;
 }
 
-.EspaceDesNounous{
-  margin-top :100px;
+.EspaceDesNounous {
+  margin-top: 100px;
   margin-bottom: 100px;
 }
 
@@ -63,33 +70,33 @@ a {
   flex-direction: column;
   color: black;
   background-color: #f3e9f1;
- box-shadow: 0px 0px 15px 0px #935df0;
+  box-shadow: 0px 0px 15px 0px #935df0;
   width: 250px;
   height: 340px;
   /* padding: 20px; */
   margin: 20px;
   align-items: center;
   /* justify-content: center; */
-  border-radius:  10px 10px 10px 10px ;
+  border-radius: 10px 10px 10px 10px;
 }
- 
+
 .imageDuNounours {
   height: 160px;
-  width:250px;
+  width: 250px;
   /* object-fit: cover; */
   /* border: 1px solid; */
   /* border-color: gold; */
-  border-radius: 5px 5px 0 0 ;
+  border-radius: 5px 5px 0 0;
 
 }
 
 .imageDuNounoursDetail {
   height: 100%;
-  width:100%;
+  width: 100%;
   /* object-fit: cover; */
   /* border: 1px solid; */
   /* border-color: gold; */
-  border-radius: 5px 5px 0 0 ;
+  border-radius: 5px 5px 0 0;
 
 }
 
