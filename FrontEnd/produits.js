@@ -19,6 +19,7 @@ fetch('http://localhost:3000/api/teddies/' + id)
     let prixDuNounours = document.createElement("H3");
     let couleurDuNounours = document.createElement("select")
     let descriptionDuNounours = document.createElement("p")
+    let boutonValider = document.createElement("button")
 
     // parce que c'est un lien
     let urlDuNounours = document.createElement("a");
@@ -31,15 +32,20 @@ fetch('http://localhost:3000/api/teddies/' + id)
     descriptionDuNounours.setAttribute("class", "descriptionDuNounours");
     urlDuNounours.setAttribute("class", "nounours");
     carteNounoursDetail.setAttribute("class", "carteNounoursDetail");
+    boutonValider.setAttribute("class", "BoutonValider");
 
     // on les cherches
     nomDuNounours.textContent = _id.name;
     imageDuNounoursDetail.setAttribute("src", _id.imageUrl);
-    prixDuNounours.textContent =  _id.price;
+    prixDuNounours.textContent = _id.price;
 
     prixDuNounours.textContent = prixDuNounours.textContent / 100 + " €";
     couleurDuNounours.textContent = _id.colors;
     descriptionDuNounours.textContent = _id.description;
+
+    boutonValider.textContent = "Valider"
+
+
 
     // on les affiches
     carteNounoursDetail.appendChild(nomDuNounours);
@@ -47,6 +53,11 @@ fetch('http://localhost:3000/api/teddies/' + id)
     carteNounoursDetail.appendChild(prixDuNounours, );
     carteNounoursDetail.appendChild(couleurDuNounours);
     carteNounoursDetail.appendChild(descriptionDuNounours);
+    carteNounoursDetail.appendChild(boutonValider);
+
+    function myFunction() {
+      document.getElementById("demo").innerHTML = "Hello World";
+    }
 
     document.getElementById("content").appendChild(carteNounoursDetail);
 

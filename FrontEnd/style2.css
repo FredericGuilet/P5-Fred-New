@@ -124,6 +124,16 @@ a {
   height: 300px;
 }
 
+.BoutonValider{
+  width: 150px;
+height: 50px;
+padding: 10px;
+margin: 20px;
+border-radius: 10px;
+background-color:#935df0;
+color:#f3e9f1;
+}
+
 H2 {
   color: #935df0;
   font-size: 1.6em
