@@ -9,6 +9,9 @@ fetch('http://localhost:3000/api/teddies/' + id)
 
   .then(_id => {
 
+    
+
+
     // console.log(data);
 
     let carteNounoursDetail = document.createElement("div");
@@ -38,16 +41,18 @@ fetch('http://localhost:3000/api/teddies/' + id)
     nomDuNounours.textContent = _id.name;
     imageDuNounoursDetail.setAttribute("src", _id.imageUrl);
     prixDuNounours.textContent = _id.price;
-
-    prixDuNounours.textContent = prixDuNounours.textContent / 100 + " €";
     couleurDuNounours.textContent = _id.colors;
-    var elt = document.querySelector(_id.colors)
+    prixDuNounours.textContent = prixDuNounours.textContent / 100 + " €";
     descriptionDuNounours.textContent = _id.description;
+
+    // test de Fred
+    // for (let i = 0; i < _id.colors.length; i++) {
+    // })
+    // couleurDuNounours.option = data[i]._id.colors;
+    // var elt = document.querySelector(_id.colors)
 
     // Pour mettre du texte dans mon bouton
     boutonValider.textContent = "Valider"
-
-
 
     // on les affiches
     carteNounoursDetail.appendChild(nomDuNounours);
@@ -63,5 +68,4 @@ fetch('http://localhost:3000/api/teddies/' + id)
 
     document.getElementById("content").appendChild(carteNounoursDetail);
 
-    // c'est parti
   })
