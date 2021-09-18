@@ -9,7 +9,7 @@ fetch('http://localhost:3000/api/teddies/' + id)
 
   .then(_id => {
 
-    
+
 
 
     // console.log(data);
@@ -21,7 +21,10 @@ fetch('http://localhost:3000/api/teddies/' + id)
     let imageDuNounoursDetail = document.createElement("img");
     let prixDuNounours = document.createElement("H3");
     let couleurDuNounours = document.createElement("select")
+    let descriptionCouleur = document.createElement("p")
+    let descriptionQuantite = document.createElement("p")
     let descriptionDuNounours = document.createElement("p")
+    let quantiteSelect = document.createElement("select")
     let boutonValider = document.createElement("button")
 
     // parce que c'est un lien
@@ -31,11 +34,15 @@ fetch('http://localhost:3000/api/teddies/' + id)
     nomDuNounours.setAttribute("class", "nounours");
     imageDuNounoursDetail.setAttribute("class", "imageDuNounoursDetail");
     prixDuNounours.setAttribute("class", "nounours");
-    couleurDuNounours.setAttribute("class", "nounours");
+    couleurDuNounours.setAttribute("class", "BoutonValider");
     descriptionDuNounours.setAttribute("class", "descriptionDuNounours");
     urlDuNounours.setAttribute("class", "nounours");
     carteNounoursDetail.setAttribute("class", "carteNounoursDetail");
     boutonValider.setAttribute("class", "BoutonValider");
+    quantiteSelect.setAttribute("class", "BoutonValider");
+
+    // quantiteSelect= option value="">--Please choose an option--</option
+    quantiteSelect.textContent="Please choose an option";
 
     // on les cherches
     nomDuNounours.textContent = _id.name;
@@ -44,6 +51,8 @@ fetch('http://localhost:3000/api/teddies/' + id)
     couleurDuNounours.textContent = _id.colors;
     prixDuNounours.textContent = prixDuNounours.textContent / 100 + " €";
     descriptionDuNounours.textContent = _id.description;
+    descriptionCouleur.textContent= "Couleur"
+    descriptionQuantite.textContent= "Quantité"
 
     // test de Fred
     // for (let i = 0; i < _id.colors.length; i++) {
@@ -58,8 +67,15 @@ fetch('http://localhost:3000/api/teddies/' + id)
     carteNounoursDetail.appendChild(nomDuNounours);
     carteNounoursDetail.appendChild(imageDuNounoursDetail);
     carteNounoursDetail.appendChild(prixDuNounours, );
+
+    carteNounoursDetail.appendChild(descriptionCouleur, );
+
     carteNounoursDetail.appendChild(couleurDuNounours);
     carteNounoursDetail.appendChild(descriptionDuNounours);
+
+    carteNounoursDetail.appendChild(descriptionQuantite, );
+    
+    carteNounoursDetail.appendChild(quantiteSelect);
     carteNounoursDetail.appendChild(boutonValider);
 
     function myFunction() {
