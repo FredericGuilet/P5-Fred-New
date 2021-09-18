@@ -41,8 +41,10 @@ fetch('http://localhost:3000/api/teddies/' + id)
 
     prixDuNounours.textContent = prixDuNounours.textContent / 100 + " €";
     couleurDuNounours.textContent = _id.colors;
+    var elt = document.querySelector(_id.colors)
     descriptionDuNounours.textContent = _id.description;
 
+    // Pour mettre du texte dans mon bouton
     boutonValider.textContent = "Valider"
 
 

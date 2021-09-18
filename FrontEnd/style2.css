@@ -24,7 +24,6 @@ margin: 0 auto;
 .img {
   width: 57px;
   height: 57px;
-
 }
 
 a {
@@ -32,23 +31,15 @@ a {
 }
 
 p {
-  text-align: center;
+  text-justify: inter-word;
 }
-
-/* .row {
-  max-width: 1300px;
-
-
-} */
 
 .colmenu {
   display: flex;
   align-items: center;
-  /* flex-direction: row; */
 }
 
-.fa,
-.fas {
+.fa,.fas {
   font-weight: 900;
   font-size: 36px;
   color: #935df0;
@@ -73,10 +64,8 @@ a {
   box-shadow: 0px 0px 15px 0px #935df0;
   width: 250px;
   height: 340px;
-  /* padding: 20px; */
   margin: 20px;
   align-items: center;
-  /* justify-content: center; */
   border-radius: 10px 10px 10px 10px;
 }
 
@@ -88,30 +77,21 @@ a {
   background-color: #f3e9f1;
   box-shadow: 0px 0px 15px 0px #935df0;
   width: 600px;
-  /* height: 340px; */
-  /* padding: 20px; */
   margin: 20px;
   align-items: center;
-  /* justify-content: center; */
   border-radius: 10px 10px 10px 10px;
 }
 
 .imageDuNounours {
   height: 160px;
   width: 250px;
-  /* object-fit: cover; */
-  /* border: 1px solid; */
-  /* border-color: gold; */
   border-radius: 5px 5px 0 0;
 
 }
 
 .imageDuNounoursDetail {
-  /* height: %; */
+
   width: 600px;
-  /* object-fit: cover; */
-  /* border: 1px solid; */
-  /* border-color: gold; */
   border-radius: 5px 5px 0 0;
 
 }
