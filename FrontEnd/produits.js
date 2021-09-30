@@ -9,11 +9,7 @@ fetch('http://localhost:3000/api/teddies/' + id)
 
   .then(_id => {
 
-
-
-
-    // console.log(data);
-
+    // Pour permettre d'avoir un bloc pour habillage en css
     let carteNounoursDetail = document.createElement("div");
 
     // on crée nos variables
@@ -26,6 +22,8 @@ fetch('http://localhost:3000/api/teddies/' + id)
     let descriptionDuNounours = document.createElement("p")
     let quantiteSelect = document.createElement("select")
     let boutonValider = document.createElement("button")
+    // la je declare la variable
+    let couleurDuNounoursOption ;
 
     // parce que c'est un lien
     let urlDuNounours = document.createElement("a");
@@ -41,24 +39,32 @@ fetch('http://localhost:3000/api/teddies/' + id)
     boutonValider.setAttribute("class", "BoutonValider");
     quantiteSelect.setAttribute("class", "BoutonValider");
 
-    // quantiteSelect= option value="">--Please choose an option--</option
-    quantiteSelect.textContent="Please choose an option";
+ 
+    for (let i = 0; i < _id.colors.length; i++) {
 
-    // on les cherches
+      // Je cree mon option
+      couleurDuNounoursOption = document.createElement("option");
+      
+      // je lui affecte une value de l'attribut valeur
+      couleurDuNounoursOption.setAttribute("value", _id.colors[i]);
+
+      // je lui met ensuite un textContent pour que le menu affiche la couleur
+      couleurDuNounoursOption.textContent = _id.colors[i];
+
+      // Je ajoute l'enfant couleur (option) dans mon parent (select)
+      couleurDuNounours.appendChild(couleurDuNounoursOption);   
+         
+    }
+
+
     nomDuNounours.textContent = _id.name;
     imageDuNounoursDetail.setAttribute("src", _id.imageUrl);
     prixDuNounours.textContent = _id.price;
-    couleurDuNounours.textContent = _id.colors;
+
     prixDuNounours.textContent = prixDuNounours.textContent / 100 + " €";
     descriptionDuNounours.textContent = _id.description;
-    descriptionCouleur.textContent= "Couleur"
-    descriptionQuantite.textContent= "Quantité"
-
-    // test de Fred
-    // for (let i = 0; i < _id.colors.length; i++) {
-    // })
-    // couleurDuNounours.option = data[i]._id.colors;
-    // var elt = document.querySelector(_id.colors)
+    descriptionCouleur.option = "Couleur"
+    descriptionQuantite.option = "Quantité"
 
     // Pour mettre du texte dans mon bouton
     boutonValider.textContent = "Valider"
@@ -67,20 +73,12 @@ fetch('http://localhost:3000/api/teddies/' + id)
     carteNounoursDetail.appendChild(nomDuNounours);
     carteNounoursDetail.appendChild(imageDuNounoursDetail);
     carteNounoursDetail.appendChild(prixDuNounours, );
-
     carteNounoursDetail.appendChild(descriptionCouleur, );
-
     carteNounoursDetail.appendChild(couleurDuNounours);
     carteNounoursDetail.appendChild(descriptionDuNounours);
-
     carteNounoursDetail.appendChild(descriptionQuantite, );
-    
-    carteNounoursDetail.appendChild(quantiteSelect);
+    // carteNounoursDetail.appendChild(quantiteSelect);
     carteNounoursDetail.appendChild(boutonValider);
-
-    function myFunction() {
-      document.getElementById("demo").innerHTML = "Hello World";
-    }
 
     document.getElementById("content").appendChild(carteNounoursDetail);
 
