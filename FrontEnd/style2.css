@@ -55,6 +55,10 @@ a {
   margin-bottom: 100px;
 }
 
+h1,p {
+  color: #935df0;
+}
+
 .carteNounours {
   display: inline-flex;
   justify-content: space-between;
@@ -103,6 +107,17 @@ a {
 
 .BoutonValider {
   width: 150px;
+  height: 50px;
+  padding: 10px;
+  margin: 20px;
+  border-radius: 10px;
+  background-color: #935df0;
+  color: #f3e9f1;
+}
+
+button
+{
+  width: 250px;
   height: 50px;
   padding: 10px;
   margin: 20px;
