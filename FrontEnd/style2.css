@@ -1,4 +1,4 @@
-/* Feuille de style */
+
 
 body {
   margin: 0;
@@ -97,6 +97,8 @@ h1,p {
 
 .descriptionDuNounours {
   color: black;
+  text-align: justify;
+  padding: 5px;
 }
 
 .objetNounours {
