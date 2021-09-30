@@ -25,12 +25,10 @@ body {
   height: 57px;
 }
 
-a {
-  color: black;
-}
 
 p {
   text-justify: inter-word;
+  color: #935df0;
 }
 
 .colmenu {
@@ -129,4 +127,9 @@ button
 H2 {
   color: #935df0;
   font-size: 1.6em
+}
+
+label{
+  color: #935df0;
+  display: flow-root;
 }
