@@ -77,7 +77,6 @@ fetch('http://localhost:3000/api/teddies/' + id)
     carteNounoursDetail.appendChild(couleurDuNounours);
     carteNounoursDetail.appendChild(descriptionDuNounours);
     carteNounoursDetail.appendChild(descriptionQuantite, );
-    // carteNounoursDetail.appendChild(quantiteSelect);
     carteNounoursDetail.appendChild(boutonValider);
 
     document.getElementById("content").appendChild(carteNounoursDetail);
