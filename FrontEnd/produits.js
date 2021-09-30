@@ -52,15 +52,12 @@ fetch('http://localhost:3000/api/teddies/' + id)
       couleurDuNounoursOption.textContent = _id.colors[i];
 
       // Je ajoute l'enfant couleur (option) dans mon parent (select)
-      couleurDuNounours.appendChild(couleurDuNounoursOption);   
-         
+      couleurDuNounours.appendChild(couleurDuNounoursOption);       
     }
-
 
     nomDuNounours.textContent = _id.name;
     imageDuNounoursDetail.setAttribute("src", _id.imageUrl);
     prixDuNounours.textContent = _id.price;
-
     prixDuNounours.textContent = prixDuNounours.textContent / 100 + " €";
     descriptionDuNounours.textContent = _id.description;
     descriptionCouleur.option = "Couleur"
@@ -68,6 +65,8 @@ fetch('http://localhost:3000/api/teddies/' + id)
 
     // Pour mettre du texte dans mon bouton
     boutonValider.textContent = "Valider"
+// boutonValider.fetch('http://localhost:3000/api/teddies/' + id)
+
 
     // on les affiches
     carteNounoursDetail.appendChild(nomDuNounours);
